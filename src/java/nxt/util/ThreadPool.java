@@ -10,6 +10,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import nxt.util.QueuedThreadPool;
 
 public final class ThreadPool {
 
@@ -70,19 +71,18 @@ public final class ThreadPool {
         runAll(lastBeforeStartJobs);
         lastBeforeStartJobs = null;
 
-	int cores = Runtime.getRuntime().availableProcessors();
-	int totalThreads = backgroundJobs.size() + backgroundJobsCores.size() * cores;
-        Logger.logDebugMessage("Starting " + String.valueOf(totalThreads) + " background jobs");
-        scheduledThreadPool = Executors.newScheduledThreadPool(totalThreads);
+        int cores = Nxt.getCPUCoresProperty(); // Runtime.getRuntime().availableProcessors();
+
+        Logger.logDebugMessage("Starting " + backgroundJobs.size() + " background jobs");
+        scheduledThreadPool = Executors.newScheduledThreadPool(backgroundJobs.size() + (backgroundJobsCores.size() * cores));
         for (Map.Entry<Runnable,Long> entry : backgroundJobs.entrySet()) {
             scheduledThreadPool.scheduleWithFixedDelay(entry.getKey(), 0, Math.max(entry.getValue() / timeMultiplier, 1), TimeUnit.MILLISECONDS);
         }
         backgroundJobs = null;
-	
-	// Starting multicore-Threads:
+
         for (Map.Entry<Runnable,Long> entry : backgroundJobsCores.entrySet()) {
-	    for(int i=0; i < cores; i++)
-	            scheduledThreadPool.scheduleWithFixedDelay(entry.getKey(), 0, Math.max(entry.getValue() / timeMultiplier, 1), TimeUnit.MILLISECONDS);
+            for(int i=0; i < cores; i++)
+                scheduledThreadPool.scheduleWithFixedDelay(entry.getKey(), 0, Math.max(entry.getValue() / timeMultiplier, 1), TimeUnit.MILLISECONDS);
         }
         backgroundJobsCores = null;
 

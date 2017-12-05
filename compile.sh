@@ -10,5 +10,3 @@ jar cf burst.jar -C classes . || exit 1
 /bin/rm -rf classes
 
 echo "burst.jar generated successfully"
-
-cp /run/media/billos/burstcoin/devWallet/burst.jar /run/media/billos/burstcoin/devWallet2/burst.jar

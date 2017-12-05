@@ -56,6 +56,18 @@ public final class Nxt {
         }
     }
 
+    private static int cpuCores = 0;
+    public static int getCPUCoresProperty() {
+        if (cpuCores > 0) return cpuCores;
+        else {
+            int cores = getIntProperty("burst.cpuCores");
+
+            if (cores == 0) cores = 1;
+            cpuCores = cores;
+            return cpuCores;
+        }
+    }
+
     public static int getIntProperty(String name) {
         try {
             int result = Integer.parseInt(properties.getProperty(name));

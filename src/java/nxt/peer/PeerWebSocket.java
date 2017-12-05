@@ -16,6 +16,7 @@
 
 package nxt.peer;
 
+import nxt.Nxt;
 import nxt.util.Logger;
 import nxt.util.QueuedThreadPool;
 import org.eclipse.jetty.websocket.api.Session;
@@ -77,8 +78,8 @@ public class PeerWebSocket {
     }
 
     private static final ExecutorService threadPool = new QueuedThreadPool(
-        Runtime.getRuntime().availableProcessors(),
-        Runtime.getRuntime().availableProcessors() * 4);
+        Nxt.getCPUCoresProperty(),
+        Nxt.getCPUCoresProperty() * 4);
 
     private volatile Session session;
     private final PeerServlet peerServlet;
