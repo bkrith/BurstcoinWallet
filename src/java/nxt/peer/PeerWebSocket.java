@@ -77,9 +77,7 @@ public class PeerWebSocket {
         }
     }
 
-    private static final ExecutorService threadPool = new QueuedThreadPool(
-        Nxt.getCPUCoresProperty(),
-        Nxt.getCPUCoresProperty() * 4);
+    private static final ExecutorService threadPool = new QueuedThreadPool(Nxt.getCPUCoresProperty(), Nxt.getCPUCoresProperty() * 4);
 
     private volatile Session session;
     private final PeerServlet peerServlet;

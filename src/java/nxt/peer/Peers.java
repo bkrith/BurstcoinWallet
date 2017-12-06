@@ -107,7 +107,7 @@ public final class Peers {
     static final Collection<PeerImpl> allPeers = Collections.unmodifiableCollection(peers.values());
 
     private static final ExecutorService sendToPeersService = new QueuedThreadPool(Nxt.getCPUCoresProperty(), Nxt.getCPUCoresProperty() * 4); 
-    private static final ExecutorService sendingService = Executors.newFixedThreadPool(Nxt.getCPUCoresProperty() * 4);
+    private static final ExecutorService sendingService = Executors.newFixedThreadPool(15);
 
     static {
 

@@ -10,7 +10,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import nxt.util.QueuedThreadPool;
 
 public final class ThreadPool {
 
@@ -116,7 +115,7 @@ public final class ThreadPool {
         }
         if (! executor.isTerminated()) {
             Logger.logShutdownMessage("some threads didn't terminate, forcing shutdown");
-            executor.shutdownNow();
+            // executor.shutdownNow();
         }
     }
 
