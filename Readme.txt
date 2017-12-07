@@ -1,4 +1,4 @@
-Burst ver 1.2.9.1
+Burst ver 1.2.10
 
 Requirements:
 Java 8 compatible JVM
@@ -10,6 +10,7 @@ Please open conf/nxt-default.properties in a text editor, and add your ip:8123 t
 
 Usage:
 Run run.sh or run.bat to start the server. The interface is accessed through a web browser on port 8125. ex: http://127.0.0.1:8125 or http://localhost:8125
+
 If you want to use websockets mode and the wallet is in "home" pc you must enable port forwarding 8123 in your router settings.
 
 Pick a long passphrase, as it is the only thing needed to access your account.

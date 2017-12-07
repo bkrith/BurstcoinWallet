@@ -18,7 +18,7 @@ import java.util.Properties;
 
 public final class Nxt {
 
-    public static final String VERSION = "1.2.9.1";
+    public static final String VERSION = "1.2.10";
     public static final String APPLICATION = "NRS";
 
     private static volatile Time time = new Time.EpochTime();
@@ -58,7 +58,7 @@ public final class Nxt {
 
     private static int cpuCores = 0;
     public static int getCPUCoresProperty() {
-        String name = "cpuCores";
+        String name = "burst.cpuCores";
 
         if (cpuCores > 0) return cpuCores;
         else {
