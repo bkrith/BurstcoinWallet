@@ -44,7 +44,7 @@ public final class ThreadPool {
             throw new IllegalStateException("Executor service already started, no new jobs accepted");
         }
         if (! Nxt.getBooleanProperty("nxt.disable" + name + "Thread")) {
-            backgroundJobs.put(runnable, timeUnit.toMillis(delay));
+            backgroundJobsCores.put(runnable, timeUnit.toMillis(delay));
         } else {
             Logger.logMessage("Will not run " + name + " thread");
         }
@@ -114,7 +114,8 @@ public final class ThreadPool {
             Thread.currentThread().interrupt();
         }
         if (! executor.isTerminated()) {
-            Logger.logShutdownMessage("some threads didn't terminate, forcing shutdown");
+            Logger.logShutdownMessage("some threads didn't terminate, please wait...");
+            // Logger.logShutdownMessage("some threads didn't terminate, forcing shutdown");
             // executor.shutdownNow();
         }
     }

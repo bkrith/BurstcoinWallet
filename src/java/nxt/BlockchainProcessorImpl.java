@@ -681,9 +681,9 @@ final class BlockchainProcessorImpl implements BlockchainProcessor {
 			}
 		}, false);
 
-		ThreadPool.scheduleThreadCores("GetMoreBlocks", getMoreBlocksThread, 2);
-		ThreadPool.scheduleThreadCores("ImportBlocks", blockImporterThread, 10);
-		ThreadPool.scheduleThreadCores("VerifyPoc", pocVerificationThread, 9);
+		ThreadPool.scheduleThread("GetMoreBlocks", getMoreBlocksThread, 2);
+		ThreadPool.scheduleThread("ImportBlocks", blockImporterThread, 10);
+		ThreadPool.scheduleThread("VerifyPoc", pocVerificationThread, 9);
 		//ThreadPool.scheduleThread("Info", debugInfoThread, 5);
 	}
 
