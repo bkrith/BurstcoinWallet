@@ -471,6 +471,7 @@
     "decrypting": "Дешифрування...",
     "leased_soon": "Скоро почнеться оренда",
     "downloaded_volume": "Завантажений Об'єм",
+	"connectionType": "Connection",
     "balance_is_leased_out": "Ефективний баланс вашого рахунку здається в оренду починаючи з блоку __start__ і закінчуючи блоком __end__ на рахунок <a href='#' data-user='__account__' class='user_info'>__account__<\/a>",
     "last_block": "Останній блок",
     "tentative": "Пробний",

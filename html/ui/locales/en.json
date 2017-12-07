@@ -475,6 +475,7 @@
     "decrypting": "Decrypting...",
     "leased_soon": "Leased Soon",
     "downloaded_volume": "Downloaded Volume",
+	"connectionType": "Connection",
     "balance_is_leased_out": "Your account effective balance is leased out starting from block __start__ until block __end__ to account <a href='#' data-user='__account__' class='user_info'>__account__<\/a>",
     "last_block": "Last Block",
     "tentative": "Tentative",

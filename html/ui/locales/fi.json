@@ -471,6 +471,7 @@
     "decrypting": "Puretaan salausta...",
     "leased_soon": "Vuokrataan pian",
     "downloaded_volume": "Ladattu määrä",
+	"connectionType": "Connection",
     "balance_is_leased_out": "Tilisi efektiivinen saldo on vuokrattu alkaen lohkosta __start__ lohkoon __end__ asti tilille <a href='#' data-user='__account__' class='user_info'>__account__<\/a>",
     "last_block": "Viimeinen lohko",
     "tentative": "Alustava",

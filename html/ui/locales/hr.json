@@ -471,6 +471,7 @@
     "decrypting": "Dekodiranje...",
     "leased_soon": "Uskoro iznajmljeno",
     "downloaded_volume": "Preuzeta količina",
+	"connectionType": "Connection",
     "balance_is_leased_out": "Vaš efektivni saldo je iznajmljen. Najam započinje od bloka __start__ do block __end__ za račun <a href='#' data-user='__account__' class='user_info'>__account__<\/a>",
     "last_block": "Posljednji blok",
     "tentative": "Privremeni",

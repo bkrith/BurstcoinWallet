@@ -304,6 +304,12 @@ final class PeerImpl implements Peer {
         return lastUpdated;
     }
 
+    @Override
+    public String getConnectionType() {
+        if (useWebSocket) return "WebSocket";
+        else return "HTTP";
+    }
+
     void setLastUpdated(int lastUpdated) {
         this.lastUpdated = lastUpdated;
     }

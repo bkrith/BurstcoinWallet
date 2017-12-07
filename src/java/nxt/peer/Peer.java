@@ -25,6 +25,8 @@ public interface Peer extends Comparable<Peer> {
 
     String getSoftware();
 
+    String getConnectionType();
+
     Hallmark getHallmark();
 
     int getWeight();

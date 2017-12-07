@@ -472,6 +472,7 @@
     "decrypting": "Расшифровка...",
     "leased_soon": "Скоро начнется аренда",
     "downloaded_volume": "Загруженный Объем",
+	"connectionType": "Connection",
     "balance_is_leased_out": "Эффективный баланс вашего счета сдается в аренду начиная с блока __start__ и заканчивая блоком __end__ на счет <a href='#' data-user='__account__' class='user_info'> __account__<\/a>",
     "last_block": "Последний Блок",
     "tentative": "Предварительный",

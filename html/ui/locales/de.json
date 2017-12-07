@@ -472,6 +472,7 @@
     "decrypting": "Wird entschlüsselt...",
     "leased_soon": "Bald verleast",
     "downloaded_volume": "Heruntergeladenes Datenvolumen",
+	"connectionType": "Connection",
     "balance_is_leased_out": "Ihr effektives Guthaben ist ab Block __start__ bis Block __end__ an das Konto <a href='#' data-user='__account__' class='user_info'> __account__<\/a> verleast.",
     "last_block": "Letzter Block",
     "tentative": "Vorläufig",

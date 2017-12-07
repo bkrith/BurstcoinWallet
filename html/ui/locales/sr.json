@@ -471,6 +471,7 @@
     "decrypting": "Декодирање...",
     "leased_soon": "Ускоро Изнајмљено",
     "downloaded_volume": "Преузета Kоличина",
+	"connectionType": "Connection",
     "balance_is_leased_out": "Ваш ефективни салдо је изнајмљен. Најам почиње од блока __start__ до блокa __end__ за налог <a href='#' data-user='__account__' class='user_info'>__account__<\/a>",
     "last_block": "Посљедњи блок",
     "tentative": "Привремени",

@@ -58,12 +58,25 @@ public final class Nxt {
 
     private static int cpuCores = 0;
     public static int getCPUCoresProperty() {
+        String name = "cpuCores";
+
         if (cpuCores > 0) return cpuCores;
         else {
-            int cores = getIntProperty("burst.cpuCores");
+            int cores = 0;
 
-            if (cores == 0) cores = 1;
+            try {
+                cores = Integer.parseInt(properties.getProperty(name));
+                Logger.logMessage(name + " = \"" + cores + "\"");
+            } catch (NumberFormatException e) {
+                cores = Runtime.getRuntime().availableProcessors();
+                
+                if (cores == 2) cores = cores - 1;
+                else if (cores > 2) cores = cores - 2;
+                Logger.logMessage(name + " not defined, assuming " + cores + " cores");
+            }
+
             cpuCores = cores;
+
             return cpuCores;
         }
     }

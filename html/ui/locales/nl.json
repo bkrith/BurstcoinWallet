@@ -471,6 +471,7 @@
     "decrypting": "Ontsleutelen...",
     "leased_soon": "Binnenkort verhuurd",
     "downloaded_volume": "Gedownload Volume",
+	"connectionType": "Connection",
     "balance_is_leased_out": "Uw effectieve balans wordt verhuurd vanaf blok __start__ tot blok __end__ ter verantwoording van <a href='#' data-user='__account__' class='user_info'> __account__<\/a>",
     "last_block": "Laatste Blok",
     "tentative": "Voorlopig",

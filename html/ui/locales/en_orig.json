@@ -277,6 +277,7 @@
 	"page_header": "Page Header",
 	"uploaded_volume": "Uploaded Volume",
 	"downloaded_volume": "Downloaded Volume",
+	"connectionType": "Connection",
 	"connected_peers": "Connected Peers",
 	"up_to_date_peers": "Up-to-date Peers",
 	"no_peers_found": "No peers found.",

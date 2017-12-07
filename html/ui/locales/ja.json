@@ -471,6 +471,7 @@
     "decrypting": "復号化中",
     "leased_soon": "リース予定",
     "downloaded_volume": "ダウンロード量",
+	"connectionType": "Connection",
     "balance_is_leased_out": "あなたアカウントの有効残高は、__start__ブロック から__end__ブロックまで<a href='#' data-user='__account__' class='user_info'>__account__<\/a>のアカウントにリースされています。",
     "last_block": "最後のブロック",
     "tentative": "仮決め",

@@ -234,6 +234,7 @@ public final class JSONData {
         json.put("platform", peer.getPlatform());
         json.put("blacklisted", peer.isBlacklisted());
         json.put("lastUpdated", peer.getLastUpdated());
+        json.put("connectionType", peer.getConnectionType());
         return json;
     }
 

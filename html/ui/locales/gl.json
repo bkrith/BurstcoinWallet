@@ -471,6 +471,7 @@
     "decrypting": "Descifrando...",
     "leased_soon": "En Leasing próximamente",
     "downloaded_volume": "Volume descarregado",
+	"connectionType": "Connection",
     "balance_is_leased_out": "O saldo efectivo da súa conta arrendarase en Leasing a partir do bloque __start__ ata o bloque __end__ á conta <a href='#' data-user='__account__' class='user_info'>__account__<\/a>",
     "last_block": "Derradeiro bloque",
     "tentative": "Tentativa",

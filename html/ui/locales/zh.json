@@ -472,6 +472,7 @@
     "decrypting": "解密...",
     "leased_soon": "将要出租",
     "downloaded_volume": "下载量",
+	"connectionType": "Connection",
     "balance_is_leased_out": "您帐户的有效余额将会出租给账户 <a href='#' data-user='__account__' class='user_info'> __account__<\/a>，从 __start__ 区块开始到 __end__区块",
     "last_block": "最新区块",
     "tentative": "暂定",

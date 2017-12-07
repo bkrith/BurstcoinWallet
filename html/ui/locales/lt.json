@@ -471,6 +471,7 @@
     "decrypting": "Iššifravimas...",
     "leased_soon": "Bus išnuomota tuoj",
     "downloaded_volume": "Atsisiųstų duomenų apimtis",
+	"connectionType": "Connection",
     "balance_is_leased_out": "Jūsų sąskaitos efektyvus balansas yra išnuomotas nuo bloko __start__ iki bloko __end__ į sąskaitą <a href='#' data-user='__account__' class='user_info'> __account__<\/a>",
     "last_block": "Paskutinis blokas",
     "tentative": "Bandomasis",
