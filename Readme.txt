@@ -1,4 +1,4 @@
-Burst ver 1.2.10
+Burst ver 1.5.7e
 
 Requirements:
 Java 8 compatible JVM
